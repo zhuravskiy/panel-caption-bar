@@ -1,0 +1,126 @@
+@mixin panelcaptionbutton {
+
+  .v-panel-caption-box {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    width: 15px;
+    height: 16px;
+    background-color: transparent;
+    border-radius: 2px;
+  }
+
+  .v-panel-caption-box-wrap .v-icon {
+    width: 1em;
+    height: 1em;
+    font-size: 11px;
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 3px;
+  }
+
+  .v-panel-caption-box:hover .v-icon {
+    opacity: 0.8;
+  }
+
+
+  .v-window-header-box {
+    position: absolute;
+    vertical-align: middle;
+    @if $theme == reindeer or $theme == demo {
+      top: 11px;
+      right: 45px;
+    }
+    cursor: pointer;
+    overflow: hidden;
+    width: 15px;
+    height: 16px;
+    background-color: transparent;
+    border-radius: 2px;
+  }
+
+  .v-window-light .v-window-header-box {
+    @if $theme == reindeer or $theme == demo {
+      top: 17px;
+    }
+  }
+
+  .v-window-light .v-window-header-box:hover {
+    @if $theme == reindeer or $theme == demo {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .v-window-light .v-window-header-box:hover .v-window-header-box-wrap {
+    @if $theme == reindeer or $theme == demo {
+      box-shadow: none;
+    }
+  }
+  .v-window-light .v-window-header-box:hover .v-icon {
+    @if $theme == reindeer or $theme == demo {
+      color: #929497;
+      text-shadow: #6b6c6f 0 -1px 0;
+    }
+  }
+
+  .v-window-light .v-window-header-box-wrap .v-icon {
+    @if $theme == reindeer or $theme == demo {
+      color: #abaeb0;
+      text-shadow: #78797b 0 -1px 0;
+    }
+  }
+
+  .v-window-light .v-window-header-box:active .v-window-header-box-wrap .v-icon {
+    @if $theme == reindeer or $theme == demo {
+      color: #abaeb0;
+      text-shadow: #78797b 0 -1px 0;
+    }
+  }
+
+  .v-window-header-box:hover {
+    @if $theme == reindeer or $theme == demo {
+      background-color: #191b1d;
+      box-shadow: 0px 0.7px 0px rgba(50,50,50,0.9);
+    }
+  }
+
+  .v-window-header-box:hover .v-window-header-box-wrap {
+    @if $theme == reindeer or $theme == demo {
+      box-shadow: inset 0px 0px 2px rgba(0,0,0,0.9);
+    }
+  }
+
+  .v-window-header-box-wrap {
+
+  }
+  .v-window-header-box-wrap .v-icon {
+    width: 1em;
+    height: 1em;
+    font-size: 11px;
+    display: table;
+    margin: 0 auto;
+    padding-top: 3px;
+  }
+
+  .v-window-header-box-wrap .v-icon {
+    @if $theme == reindeer or $theme == demo {
+      color: #ccc;
+      text-shadow: #000 0 -1px 0;
+    } @else if $theme == valo {
+      color: blue;
+    }
+  }
+
+  .v-window-header-box:active .v-window-header-box-wrap .v-icon {
+    @if $theme == reindeer or $theme == demo {
+      color: #7b7b7b;
+      text-shadow: #000 0 -1px 0;
+    } @else if $theme == valo {
+      color: darkblue;
+    }
+  }
+  
+}

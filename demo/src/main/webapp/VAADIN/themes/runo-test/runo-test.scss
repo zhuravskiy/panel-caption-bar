@@ -1,0 +1,5 @@
+@import "../runo/runo.scss";
+
+@mixin runo-test {
+  @include runo;
+}

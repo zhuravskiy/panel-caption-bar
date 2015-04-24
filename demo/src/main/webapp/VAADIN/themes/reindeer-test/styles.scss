@@ -1,0 +1,10 @@
+@import "addons.scss";
+@import "reindeer-test.scss";
+
+$theme: reindeer;
+
+.reindeer-test {
+  @include reindeer-test;
+  @include addons;
+
+}

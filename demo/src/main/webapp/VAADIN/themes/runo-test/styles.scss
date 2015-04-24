@@ -1,0 +1,9 @@
+@import "addons.scss";
+@import "runo-test.scss";
+
+$theme: runo;
+
+.runo-test {
+  @include runo-test;
+  @include addons;
+}

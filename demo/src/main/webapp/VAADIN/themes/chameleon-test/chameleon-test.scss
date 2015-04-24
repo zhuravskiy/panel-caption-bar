@@ -1,0 +1,5 @@
+@import "../chameleon/chameleon.scss";
+
+@mixin chameleon-test {
+  @include chameleon;
+}

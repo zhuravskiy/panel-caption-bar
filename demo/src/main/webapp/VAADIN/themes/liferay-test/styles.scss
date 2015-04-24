@@ -1,0 +1,9 @@
+@import "addons.scss";
+@import "liferay-test.scss";
+
+$theme: liferay;
+
+.liferay-test {
+  @include liferay-test;
+  @include addons;
+}

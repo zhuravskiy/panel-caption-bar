@@ -1,0 +1,9 @@
+@import "addons.scss";
+@import "chameleon-test.scss";
+
+$theme: chameleon;
+
+.chameleon-test {
+  @include chameleon-test;
+  @include addons;
+}

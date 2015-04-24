@@ -1,0 +1,5 @@
+@import "../reindeer/reindeer.scss";
+
+@mixin reindeer-test {
+  @include reindeer;
+}
